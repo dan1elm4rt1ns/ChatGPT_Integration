@@ -1,9 +1,7 @@
 import customtkinter
 import openai, os, sys
 
-#openai.api_key = os.environ['paste_your_api_key_here']
-#openai.api_key = 'paste_your_api_key_here' //Não recomendado, mas útil para fins de teste.
-openai.api_key = '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'
+openai.api_key = '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'
 
 messages = [
     {"role": "system", "content": "You are a helpful assistant."},
