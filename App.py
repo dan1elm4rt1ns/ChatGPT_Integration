@@ -1,11 +1,10 @@
 import openai, os, sys
-import time
 import tkinter
 import tkinter.messagebox
 import customtkinter
 
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
-customtkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
+customtkinter.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
 
 #openai.api_key = os.environ['paste_your_api_key_here']
 #openai.api_key = 'paste_your_api_key_here' //Não recomendado, mas útil para fins de teste.
