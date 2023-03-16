@@ -8,7 +8,6 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: "blue" (standard),
 
 #openai.api_key = os.environ['paste_your_api_key_here']
 #openai.api_key = 'paste_your_api_key_here' //Não recomendado, mas útil para fins de teste.
-openai.api_key = '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'
 
 class App(customtkinter.CTk):
     def __init__(self):
