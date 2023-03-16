@@ -7,3 +7,8 @@
 #### python3.8 -m pip --upgrade pip
 #### python3.8 -m pip install customtkinter
 #### python3.8 -m pip install --upgrade openai
+
+
+### Preview:
+
+![alt text](https://i.ibb.co/KqF0JSM/chat-gpt-integration.jpg)
