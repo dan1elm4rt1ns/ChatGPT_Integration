@@ -7,9 +7,9 @@ import customtkinter
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
 
-openai.api_key = os.environ['paste_your_api_key_here']
+#openai.api_key = os.environ['paste_your_api_key_here']
 #openai.api_key = 'paste_your_api_key_here' //Não recomendado, mas útil para fins de teste.
-
+openai.api_key = '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'
 
 class App(customtkinter.CTk):
     def __init__(self):
