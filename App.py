@@ -6,28 +6,29 @@ import customtkinter
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
 
-openai.api_key = os.environ['api_key'] #Add api_key environment variable in your System
+openai.api_key = os.environ['api_key']  # Add api_key environment variable in your System
+
 
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        #Open AI Configs
+        # Open AI Configs
 
         messages = [
             {"role": "system", "content": "You are a helpful assistant."},
         ]
 
-        #Window
+        # Window
         self.title("Chat GPT Integration")
         self.geometry(f"{1100}x{500}")
 
-        #Grid layout
+        # Grid layout
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
 
-        #Sidebar frame with widgets
+        # Sidebar frame with widgets
         self.sidebar_frame = customtkinter.CTkFrame(self, width=140, corner_radius=0)
         self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
         self.sidebar_frame.grid_rowconfigure(4, weight=1)
@@ -47,17 +48,18 @@ class App(customtkinter.CTk):
                                                                command=self.change_scaling_event)
         self.scaling_optionemenu.grid(row=8, column=3, padx=20, pady=(10, 20))
 
-        #Main entry and button
+        # Main entry and button
         self.question1 = customtkinter.CTkEntry(self, placeholder_text="")
         self.question1.grid(row=3, column=1, columnspan=2, padx=(20, 0), pady=(20, 20), sticky="nsew")
-        self.main_button_1 = customtkinter.CTkButton(master=self, border_width=2, command=self.makequestion, text="Enviar")
+        self.main_button_1 = customtkinter.CTkButton(master=self, border_width=2, command=self.makequestion,
+                                                     text="Enviar")
         self.main_button_1.grid(row=3, column=3, padx=(20, 20), pady=(20, 20), sticky="nsew")
 
-        #Create textbox
+        # Create textbox
         self.textbox = customtkinter.CTkTextbox(self, height=500, wrap="word")
         self.textbox.grid(row=0, column="1", columnspan=5, padx=(20, 20), pady=(15, 15), sticky="nsew")
 
-        #Default values
+        # Default values
         self.appearance_mode_optionemenu.set("Dark")
         self.scaling_optionemenu.set("100%")
 
@@ -86,6 +88,7 @@ class App(customtkinter.CTk):
         self.textbox.insert("0.0", "[Chat GPT]: " + answer + "\n\n")
         self.textbox.insert("0.0", "[Você]: " + message + "\n\n")
         self.question1.delete(0, "end")
+
 
 if __name__ == "__main__":
     app = App()
