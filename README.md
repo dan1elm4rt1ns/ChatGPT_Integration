@@ -2,7 +2,7 @@
 
 ### Simple aplicattion for studies with Python + CustomTkinter + Open AI Integration
 
-### Requisitos: 
+#### Requisitos: 
 
 #### Open AI API Key, Python 3.8 ou superior e alguns módulos:
 
@@ -11,6 +11,6 @@
 #### python3.8 -m pip install --upgrade openai
 
 
-### Preview:
+#### Preview:
 
 ![alt text](https://i.ibb.co/6FWFxFG/Chat-GPT.png)
