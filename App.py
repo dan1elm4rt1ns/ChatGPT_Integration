@@ -5,7 +5,6 @@ import customtkinter
 
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
-
 openai.api_key = os.environ['api_key']  # Add api_key environment variable in your System
 
 
