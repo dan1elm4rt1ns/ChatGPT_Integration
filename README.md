@@ -1,4 +1,5 @@
-# Chat_GPT_Integration
+# Chat_GPT_Integration with Python and customtkinter module
+## Simple aplicattion for studies with Python + CustomTkinter + Open AI Integration
 
 ### Requisitos: 
 
@@ -11,5 +12,4 @@
 
 ### Preview:
 
-![alt text](https://i.ibb.co/KqF0JSM/chat-gpt-integration.jpg)
-
+![alt text](https://i.ibb.co/6FWFxFG/Chat-GPT.png)

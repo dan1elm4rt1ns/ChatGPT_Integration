@@ -82,10 +82,7 @@ class App(customtkinter.CTk):
             messages=messages
         )
         answer = chat_completion.choices[0].message.content
-        #        label = customtkinter.CTkLabel(master=frame, text=answer)
-        #        label.pack(pady=12, padx=10)
         messages.append({"role": "assistant", "content": answer})
-        #        label.pack(pady=12, padx=10)
         self.textbox.insert("0.0", "[Chat GPT]: " + answer + "\n\n")
         self.textbox.insert("0.0", "[Você]: " + message + "\n\n")
         self.question1.delete(0, "end")
