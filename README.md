@@ -1,8 +1,8 @@
 # Chat_GPT_Integration with Python and customtkinter module
 
-### Simple aplicattion for studies with Python + CustomTkinter + Open AI Integration
+### Simple aplicattion for studies with Python + CustomTkinter + OpenAI Integration
 
-#### Requisitos: 
+#### Requirements: 
 
 #### Open AI API Key, Python 3.8 ou superior e alguns módulos:
 
