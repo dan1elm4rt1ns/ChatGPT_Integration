@@ -1,4 +1,4 @@
-# Chat_GPT_Integration with Python and customtkinter module
+# Chat GPT Integration with Python and customtkinter module
 
 ### Simple aplicattion for studies with Python + CustomTkinter + OpenAI Integration
 
